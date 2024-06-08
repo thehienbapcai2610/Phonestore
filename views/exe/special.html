@@ -1,0 +1,67 @@
+<section id="special" class="py-5">
+    <div class="container d-flex justify-content-center align-items-center min-vh-100">
+        <div class="row border rounder-5 p-3 bg-white shadow">
+            <div class="title text-center py-5">
+                <h2 class="position-relative d-inline-block">Phụ kiện</h2>
+            </div>
+    
+            <div class="special-list row g-0">
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2 best"  ng-repeat="product in products2 | filter:searchText:false | limitTo: pageSize : begin">
+                    <div class="special-img position-relative overflow-hidden">
+                        <img src="images/{{product.photo}}">
+                        <span
+                            class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                        </span>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-capitalize mt-3 mb-1">{{product.name}}</p>
+                        <span class="fw-bold d-block">$ {{product.price}}</span>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Thêm vào giỏ hàng
+                        </button>
+    
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Sản phẩm</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Bạn có chắc mua sản phẩm này chứ?
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Hủy</button>
+                                        <button type="button" class="btn btn-primary">Mua</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+               
+                <div class="card-footer text-center">
+                    <a class="btn btn-default" ng-click="first()">
+                        <i class="fas fa-hand-point-up"></i>
+                    </a>
+                    <a class="btn btn-default" ng-click="previous()">
+                        <i class="fas fa-hand-point-left"></i>
+                    </a>
+                    <a class="btn btn-default" ng-click="next()">
+                        <i class="fas fa-hand-point-right"></i>
+                    </a>
+                    <a class="btn btn-default" ng-click="last()">
+                        <i class="fas fa-hand-point-down"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+</section>

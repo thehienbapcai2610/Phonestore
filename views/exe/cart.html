@@ -1,0 +1,56 @@
+
+
+<section id="collection" class="py-5">
+    <div class="container  d-flex justify-content-center align-items-center min-vh-100">
+        <div class="row border rounder-5 p-3 bg-white shadow">
+            <div class="title text-center">
+                <h2 class="position-relative d-inline-block">Giỏ hàng</h2>
+            </div>
+            <div class="row">
+                <table class="table table-borered table-hover">
+                    <thead>
+                        <tr>
+                            <td></td>
+                            <th>Hình</th>
+                            <th ng-click="sortBy('name')">Tên sản phẩm</th>
+                            <th ng-click="sortBy('price')">Giá</th>
+                            <th>Số lượng</th>
+                            <th>Thành tiền</th>
+                            <th></th>
+                        </tr>
+                    <tbody >
+                        <tr  ng-repeat = "cart in carts" ng-init ="cart.soluong = 1;" >
+                            <td><input ng-model="cart.buy" type="checkbox"></td>
+                            <td><img src="images/{{cart.p_image}}" width="70" height="70"></td>
+                            <td>{{cart.p_name | uppercase}}</td>
+                            <td>${{cart.p_price | number}}</td>
+                            <td>
+                                <input class="text-center" type="number" style="width: 60px; text-align: center;" ng-model="cart.soluong" min="1" max="100" ng-disabled="!cart.buy">
+                            </td>
+                            <td>${{cart.p_price*cart.soluong | number}}</td>
+                            <td><button type = "button" ng-click = "remove_cart(cart)" class = "btn btn-danger"> X</button></td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th></th>
+                            <th>Tổng số lượng: {{allsoluong() | number}}</th>
+                            <th>Tổng tiền: ${{tongtien() | number}}</th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </tbody>
+    
+                    </thead>
+    
+                </table>
+    
+                <div class="text-center">
+                    <a href="#!/collection" class=" btn btn-sm btn-primary">Tiếp tục mua hàng</a>
+                    <button class="btn btn-sm btn-danger">Xóa hết giỏ hàng</button>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+</section>

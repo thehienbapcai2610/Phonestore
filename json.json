@@ -1,0 +1,18 @@
+[
+    {"p_id": "1", "p_name": "IPhone 12", "p_image": "iphone-12-(66).jpg", "p_price": 587.26 },
+    {"p_id": "2", "p_name": "IPhone 14 Pro", "p_image": "iphone-14-pro-max-(54).jpg","p_price": 1713.63},
+    {"p_id": "3", "p_name": "IPhone 15 Pro Max", "p_image": "iphone-15-pro-max-(6).jpg", "p_price": 1346.34 },
+    {"p_id": "4", "p_name": "Xiaomi 13T 5G 12GB", "p_image": "xiaomi-13t-12gb-(4).jpg", "p_price": 489.32},
+    {"p_id": "5", "p_name": "Xiaomi Redmi Note 13 Pro 5G", "p_image": "xiaomi-redmi-note-13-pro-5g-thumb-1-600x600.jpg", "p_price": 199.56},
+    {"p_id": "6", "p_name": "Xiaomi Redmi Note 13 Pro+ 5G", "p_image": "xiaomi-redmi-note-13-pro-plus-thumb-600x600.jpg", "p_price": 199.56},
+    {"p_id": "7", "p_name": "Samsung Galaxy M54 5G", "p_image": "samsung-galaxy-m54-(2).jpg", "p_price": 428.10},
+    {"p_id": "8", "p_name": "Samsung Galaxy S23 FE 5G", "p_image": "samsung-galaxy-s23-fe-5g-tim-thumb-600x600.jpeg", "p_price": 505.64},
+    {"p_id": "9", "p_name": "Samsung Galaxy S23 Ultra 5G", "p_image": "samsung-galaxy-s23-ultra.jpg", "p_price": 906.18},
+    {"p_id": "10", "p_name": "Samsung Galaxy Z Flip5 5G", "p_image": "samsung-galaxy-z-flip5-(4).jpg", "p_price": 820.42},
+    {"p_id": "11", "p_name": "Samsung Galaxy Z Fold5 5G", "p_image": "samsung-galaxy-z-fold4-(24).jpg", "p_price": 1498.32},
+    {"p_id": "12", "p_name": "Samsung Galaxy S23 FE 5G", "p_image": "samsung-galaxy-s23-fe-5g-tim-thumb-600x600.jpeg", "p_price": 505.64},
+    {"p_id": "13", "p_name": "Samsung ", "p_image": "samsung-galaxy-s23-fe-5g-tim-thumb-600x600.jpeg", "p_price": 505.64}
+    
+
+]
+

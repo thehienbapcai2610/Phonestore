@@ -1,0 +1,32 @@
+<section id="collection" class="py-5">
+    <div class="container  d-flex justify-content-center align-items-center min-vh-100">
+        <div class="row border rounder-5 p-3 bg-white shadow">
+            <div class="title text-center">
+                <h2 class="position-relative d-inline-block">Liên hệ</h2>
+            </div>
+            <div class="card-body">
+                <form name="frmsv">
+                    <div class="form-group">
+                        <label for="">Họ và tên</label>
+                        <input type="text" ng-model="name" required minlength="10" maxlength="50"  class="form-control" name="txtName">
+                        <label ng-show="frmsv.txtName.$invalid" class="alert alert-danger">Bạn chưa nhập</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Phone</label>
+                        <input type="number" ng-model="mark" required   class="form-control"  required minlength="10" maxlength="50" name="txtMark">
+                        <label ng-show="frmsv.txtMark.$invalid" class="alert alert-danger">Chưa đúng</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Email</label>
+                        <input type="email" ng-model="email" required   class="form-control"  name="txtEmail">
+                        <label ng-show="frmsv.txtEmail.$invalid" class="alert alert-danger">Email sai</label>
+                    </div>
+                    <hr>
+                    <button type="button" class="btn btn-primary">Gửi</button>
+                    <label ng-show="frmsv.$valid" class="alert alert-success">Gửi thành công</label>
+                </form>
+            </div>
+    
+        </div>
+    </div>
+</section>

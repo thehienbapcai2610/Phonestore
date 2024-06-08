@@ -1,0 +1,22 @@
+[
+    {
+        "photo": "adapter-chuyen-doi-usb-c-5-in-1-mazer-uc2multi7001c-thumb-600x600.jpg",
+        "name": "Chuyển đổi USB C 5 in 1",
+        "price": 33.06    
+    },{
+        "photo": "mieng-dan-kinh-cuong-luc-samsung-galaxy-a25-jincase-thumb-600x600.jpg",
+        "name": "Miếng dán kính cường lực",
+        "price": 4.08    
+    }
+    ,{
+        "photo": "tai-nghe-bluetooth-airpods-pro-2nd-gen-usb-c-charge-apple-thumb-1-600x600.jpg",
+        "name": "AirPods Pro Gen 2",
+        "price": 240.37    
+    }
+    ,{
+        "photo": "tai-nghe-bluetooth-tws-xiaomi-redmi-buds-4-lite-thumb-600x600.jpg",
+        "name": "TWS Xiaomi Redmi Buds 4 Lite",
+        "price": 22.04    
+    }
+    
+]

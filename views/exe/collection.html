@@ -1,0 +1,69 @@
+
+
+<section id="collection" class="py-5">
+    <div class="container d-flex justify-content-center align-items-center min-vh-100">
+        <div class="row border rounder-5 p-3 bg-white shadow">
+            <div class="title text-center">
+                <h2 class="position-relative d-inline-block">Sản phẩm</h2>
+            </div>
+            <div class="row g-0">
+                <div class="d-flex flex-wrap justify-content-center mt-5 filter-button-group">
+                    <button type="button" class="btn m-2 text-dark" ng-click="sortBy('p_price')">Giá giảm dần</button>
+                    <button type="button" class="btn m-2 text-dark" ng-click="sortBy('p_name')">A-Z</button>
+                </div>
+                <div class="col-sm-3 ml-auto">
+                    <div class="form-inline">
+                        <label for="">Hiển thị:</label>
+                        <select name="" id="pageSize" class="form-control" ng-change="repaginate()" ng-model="pageSize"
+                            convert-to-number>
+                            <option value="2">2</option>
+                            <option value="4">4</option>
+                            <option value="8">8</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="collection-list mt-4 row gx-0 gy-3" id = "product">
+                    <div id = "p_list" class=" col-md-6 col-lg-4 col-xl-3 p-2 feat" ng-repeat = "product in products | orderBy : prop | filter:searchText:false |limitTo:pageSize : begin" >
+                        <div class=" collection-img position-relative">
+                            <img src="images/{{product.p_image}}">
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">{{product.p_name}}</p>
+                            <span class="fw-bold">$ {{product.p_price}}</span>
+                            <br>
+                            
+                            <button type="button" class="btn btn-success"  data-bs-toggle="modal"
+                        data-bs-target="#exampleModal" ng-click = "add_cart(product)">
+                        Thêm vào giỏ hàng
+                    </button>
+                        </div>
+                        
+
+    
+                    </div>
+                </div>
+                <div class="card-footer text-center">
+                    <a class="btn btn-default" ng-click="first()">
+                        <i class="fas fa-hand-point-up"></i>
+                    </a>
+                    <a class="btn btn-default" ng-click="previous()">
+                        <i class="fas fa-hand-point-left"></i>
+                    </a>
+                    <a class="btn btn-default" ng-click="next()">
+                        <i class="fas fa-hand-point-right"></i>
+                    </a>
+                    <a class="btn btn-default" ng-click="last()">
+                        <i class="fas fa-hand-point-down"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+</section>
